@@ -21,25 +21,46 @@ select {
 
 /* WEATHER */
 
-.weather-section {
-    text-align: center;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #ddd;
+.weather-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#temperature {
-    font-size: 3rem;
+.weather-card {
+    background: white;
+    padding: 20px;
+    width: 180px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.weather-card p:first-of-type {
+    font-size: 2rem;
     font-weight: bold;
 }
 
-#condition {
-    font-size: 1.1rem;
+#aurangabad-sunrise,
+#aurangabad-sunset {
+    font-size: 0.9rem;
 }
 
-#message {
-    margin-top: 20px;
-}
+<div class="weather-cards">
 
+    <section class="weather-card">
+        <h2>Mumbai</h2>
+        <p id="mumbai-temperature">Loading...</p>
+    </section>
+
+    <section class="weather-card">
+        <h2>Aurangabad</h2>
+        <p id="aurangabad-temperature">Loading...</p>
+        <p id="aurangabad-sunrise"></p>
+        <p id="aurangabad-sunset"></p>
+    </section>
+
+</div>
 
 /* RANDOM LEXICON */
 
