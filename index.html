@@ -2,32 +2,99 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Weather App</title>
+    <title>Weather & Random Lexicon</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
     <main class="weather-app">
 
-        <h1>Weather App</h1>
+        <!-- WEATHER SECTION -->
 
-        <h2 id="location">Loading...</h2>
+        <section class="weather-section">
 
-        <p id="temperature"></p>
+            <h1>Weather App</h1>
 
-        <p id="condition"></p>
+            <h2 id="location">Loading...</h2>
 
-        <p id="message"></p>
+            <p id="temperature"></p>
+
+            <p id="condition"></p>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- RANDOM LEXICON SECTION -->
+
+        <section class="lexicon-section">
+
+            <h1>Random Lexicon</h1>
+
+            <p>
+                Fetch a random word and its definition.
+            </p>
+
+            <div class="filterRow">
+
+                <label for="posFilter">
+                    Part of speech
+                </label>
+
+                <select id="posFilter">
+
+                    <option value="">
+                        Any
+                    </option>
+
+                    <option value="noun">
+                        Noun
+                    </option>
+
+                    <option value="verb">
+                        Verb
+                    </option>
+
+                    <option value="adj">
+                        Adjective
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button id="fetchBtn">
+                Get Word
+            </button>
+
+
+            <div id="status" aria-live="polite"></div>
+
+
+            <section id="result" hidden>
+
+                <h2 id="word"></h2>
+
+                <p id="partOfSpeech"></p>
+
+                <p id="definition"></p>
+
+            </section>
+
+
+            <div id="error" aria-live="polite"></div>
+
+        </section>
 
     </main>
+
 
     <script src="script.js"></script>
 
