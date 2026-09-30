@@ -12,76 +12,75 @@
 
 <body>
 
+    <!-- ==========================
+         WEATHER
+         ========================== -->
+
     <main class="weather-app">
 
-        <section class="weather-card">
-    <h2>Mumbai</h2>
-    <p id="mumbai-temperature">Loading...</p>
-</section>
+        <h1>Weather</h1>
 
+        <div class="weather-cards">
 
+            <section class="weather-card">
+                <h2 id="location">Mumbai</h2>
 
-        
+                <p id="temperature"></p>
 
-        <!-- RANDOM LEXICON SECTION -->
-
-        <section class="lexicon-section">
-
-            <h1>Random Lexicon</h1>
-
-            <p>
-                Fetch a random word and its definition.
-            </p>
-
-            <div class="filterRow">
-
-                <label for="posFilter">
-                    Part of speech
-                </label>
-
-                <select id="posFilter">
-
-                    <option value="">
-                        Any
-                    </option>
-
-                    <option value="noun">
-                        Noun
-                    </option>
-
-                    <option value="verb">
-                        Verb
-                    </option>
-
-                    <option value="adj">
-                        Adjective
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <button id="fetchBtn">
-                Get Word
-            </button>
-
-
-            <div id="status" aria-live="polite"></div>
-
-
-            <section id="result" hidden>
-
-                <h2 id="word"></h2>
-
-                <p id="partOfSpeech"></p>
-
-                <p id="definition"></p>
-
+                <p id="condition">
+                    Hourly temperature forecast
+                </p>
             </section>
 
 
-            <div id="error" aria-live="polite"></div>
+            <section class="weather-card">
+                <h2>Aurangabad</h2>
+
+                <p id="aurangabad-temperature"></p>
+
+                <p id="aurangabad-sunrise"></p>
+
+                <p id="aurangabad-sunset"></p>
+            </section>
+
+        </div>
+
+        <p id="message"></p>
+
+    </main>
+
+
+    <!-- ==========================
+         RANDOM LEXICON
+         ========================== -->
+
+    <main class="lexicon">
+
+        <h1>Random Lexicon</h1>
+
+        <select id="posFilter">
+            <option value="">Any part of speech</option>
+            <option value="noun">Noun</option>
+            <option value="verb">Verb</option>
+            <option value="adjective">Adjective</option>
+            <option value="adverb">Adverb</option>
+        </select>
+
+        <button id="fetchBtn">
+            Get a word
+        </button>
+
+        <p id="status"></p>
+
+        <p id="error"></p>
+
+        <section id="result" hidden>
+
+            <h2 id="word"></h2>
+
+            <p id="partOfSpeech"></p>
+
+            <p id="definition"></p>
 
         </section>
 
