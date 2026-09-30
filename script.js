@@ -4,8 +4,8 @@
 
 const weatherURL =
     "https://api.open-meteo.com/v1/forecast?latitude=19.0728&longitude=72.8826&hourly=temperature_2m";
-const aurangabadURL =
-    "https://api.open-meteo.com/v1/forecast?latitude=19.8776&longitude=75.3423&daily=sunrise,sunset&hourly=temperature_2m&timezone=auto";
+
+
 
 const locationElement =
     document.getElementById("location");
