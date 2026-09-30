@@ -1,21 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
+    font: 16px/1.5 Arial, sans-serif;
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #222;
     background: #f2f2f2;
-    margin: 0;
-    padding: 40px 20px;
 }
 
-.weather-app {
-    max-width: 500px;
-    margin: auto;
+main {
     background: white;
-    padding: 30px;
+    padding: 2rem;
     border-radius: 12px;
-    text-align: center;
 }
 
-h1 {
-    margin-bottom: 30px;
+button,
+select {
+    font: inherit;
+}
+
+
+/* WEATHER */
+
+.weather-section {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
 }
 
 #temperature {
@@ -29,4 +38,37 @@ h1 {
 
 #message {
     margin-top: 20px;
+}
+
+
+/* RANDOM LEXICON */
+
+.lexicon-section {
+    padding-top: 2rem;
+}
+
+.filterRow,
+#status,
+#result,
+#error {
+    margin-top: 1rem;
+}
+
+#fetchBtn {
+    padding: 0.6rem 0.75rem;
+}
+
+#result {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #fff;
+}
+
+#partOfSpeech {
+    color: #555;
+    font-style: italic;
+}
+
+#error {
+    color: #b00020;
 }
