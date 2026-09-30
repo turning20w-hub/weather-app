@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.weather-app {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+#temperature {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#condition {
+    font-size: 1.1rem;
+}
+
+#message {
+    margin-top: 20px;
+}
