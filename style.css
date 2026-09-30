@@ -36,31 +36,7 @@ select {
     text-align: center;
 }
 
-.weather-card p:first-of-type {
-    font-size: 2rem;
-    font-weight: bold;
-}
 
-#aurangabad-sunrise,
-#aurangabad-sunset {
-    font-size: 0.9rem;
-}
-
-<div class="weather-cards">
-
-    <section class="weather-card">
-        <h2>Mumbai</h2>
-        <p id="mumbai-temperature">Loading...</p>
-    </section>
-
-    <section class="weather-card">
-        <h2>Aurangabad</h2>
-        <p id="aurangabad-temperature">Loading...</p>
-        <p id="aurangabad-sunrise"></p>
-        <p id="aurangabad-sunset"></p>
-    </section>
-
-</div>
 
 /* RANDOM LEXICON */
 
