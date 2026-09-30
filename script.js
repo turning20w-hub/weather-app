@@ -5,6 +5,8 @@
 const weatherURL =
     "https://api.open-meteo.com/v1/forecast?latitude=19.0728&longitude=72.8826&hourly=temperature_2m";
 
+const aurangabadURL =
+    "https://api.open-meteo.com/v1/forecast?latitude=19.8776&longitude=75.3423&daily=sunrise,sunset&hourly=temperature_2m&timezone=auto";
 
 
 const locationElement =
@@ -19,6 +21,15 @@ const conditionElement =
 const messageElement =
     document.getElementById("message");
 
+const aurangabadTemperature =
+    document.getElementById("aurangabad-temperature");
+
+const aurangabadSunrise =
+    document.getElementById("aurangabad-sunrise");
+
+const aurangabadSunset =
+    document.getElementById("aurangabad-sunset");
+
 
 async function getWeather() {
 
@@ -26,22 +37,55 @@ async function getWeather() {
 
         messageElement.textContent = "Loading weather...";
 
-        const response = await fetch(weatherURL);
+        // Mumbai
+        const response =
+            await fetch(weatherURL);
 
-        const weatherData = await response.json();
+        const weatherData =
+            await response.json();
 
         console.log(weatherData);
 
         const temperature =
             weatherData.hourly.temperature_2m[0];
 
-        locationElement.textContent = "Mumbai";
+        locationElement.textContent =
+            "Mumbai";
 
         temperatureElement.textContent =
             `${temperature}°C`;
 
         conditionElement.textContent =
             "Hourly temperature forecast";
+
+
+        // Aurangabad
+        const aurangabadResponse =
+            await fetch(aurangabadURL);
+
+        const aurangabadData =
+            await aurangabadResponse.json();
+
+        console.log(aurangabadData);
+
+        const aurangabadTemp =
+            aurangabadData.hourly.temperature_2m[0];
+
+        const sunrise =
+            aurangabadData.daily.sunrise[0];
+
+        const sunset =
+            aurangabadData.daily.sunset[0];
+
+        aurangabadTemperature.textContent =
+            `${aurangabadTemp}°C`;
+
+        aurangabadSunrise.textContent =
+            `Sunrise: ${sunrise}`;
+
+        aurangabadSunset.textContent =
+            `Sunset: ${sunset}`;
+
 
         messageElement.textContent = "";
 
@@ -53,6 +97,7 @@ async function getWeather() {
             "Unable to load weather data.";
 
     }
+
 }
 
 
@@ -96,7 +141,8 @@ fetchBtn.addEventListener("click", fetchWord);
 
 async function fetchWord() {
 
-    const url = new URL(API_BASE);
+    const url =
+        new URL(API_BASE);
 
 
     // Add the part-of-speech filter
@@ -117,7 +163,8 @@ async function fetchWord() {
 
     try {
 
-        const response = await fetch(url);
+        const response =
+            await fetch(url);
 
 
         if (!response.ok) {
@@ -129,7 +176,8 @@ async function fetchWord() {
         }
 
 
-        const data = await response.json();
+        const data =
+            await response.json();
 
 
         if (
@@ -170,11 +218,14 @@ function setLoadingState() {
 
     fetchBtn.disabled = true;
 
-    statusEl.textContent = "Loading...";
+    statusEl.textContent =
+        "Loading...";
 
-    errorEl.textContent = "";
+    errorEl.textContent =
+        "";
 
-    resultEl.hidden = true;
+    resultEl.hidden =
+        true;
 
 }
 
@@ -190,21 +241,27 @@ function renderResult(data) {
     definitionEl.textContent =
         data.definition;
 
-    statusEl.textContent = "";
+    statusEl.textContent =
+        "";
 
-    errorEl.textContent = "";
+    errorEl.textContent =
+        "";
 
-    resultEl.hidden = false;
+    resultEl.hidden =
+        false;
 
 }
 
 
 function showError(message) {
 
-    statusEl.textContent = "";
+    statusEl.textContent =
+        "";
 
-    errorEl.textContent = message;
+    errorEl.textContent =
+        message;
 
-    resultEl.hidden = true;
+    resultEl.hidden =
+        true;
 
 }
