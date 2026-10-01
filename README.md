@@ -2,7 +2,7 @@
 
 # Tutorial
 
-## Build your first weather + lexicon application
+## Build Your First Weather + Lexicon Application
 Today we will build a weather + lexicon application page with APIs, using GitHub Pages, 
 
 1. Create a new repository and let's name it “WeatherLexi” 
@@ -15,7 +15,7 @@ Today we will build a weather + lexicon application page with APIs, using GitHub
 
 # How-to
 
-## How to authenticate API requests 
+## How to Authenticate API Requests 
 1. Visit open-meteo.com and add the coordinates and information to get the API. 
 2. Add the API URL in your script.js file. For eg.: `https://open-meteo.com/en/docs?latitude=19.8776&longitude=75.3423&daily=sunrise,sunset&timezone=auto`
 3. Commit changes
@@ -23,19 +23,19 @@ Today we will build a weather + lexicon application page with APIs, using GitHub
 [ Same applies to Random Lexicon API] 
 
 
-## How to retrieve weather for a location
+## How to Retrieve Weather For a Location
 1. Visit open-meteo.com and add the coordinates
 2. You can tick the box to fetch the weather data every two hours.
 3. Temperature, rain, precipitation are also some options available to use. 
 4. On the page scroll below and fetch the API URL that will run the requests we ticked mark. 
 
-## How to get random words for the site 
+## How to Get Random Words for The Site 
 1. Visit [randomlexicon.com](https://randomlexicon.com/api-quick-start)
 titled as API quick start guide. 
 2. Add the code to your page. Commit changes. 
 
 
-## How to handle API errors
+## How to Handle API Errors
 1. APIs server will communicate via JSON. Ensure you have JavaScript enabled and Js. code in your file. 
 2. Ensure you have `index.html` and `style.css` file targeting the page structure to yield results through API. 
 3. () fetch - Ensure the element is used. 
@@ -50,15 +50,15 @@ It is a digital location where an API ( Application Programming Interface) recei
 
 # Explanation
 
-## How the weather API works
+## How the Weather API Works
 With Open Mateo you can use their API for non commercial use for upto 10.000 daily limits. Once you fill in the information and tick the box it will give a URL for you to use. Add the API URL in your js file and run the code. Js will make the call to API server to fetch database and the API will communicate with JSON files that will be appearing on the web page of the user. 
 
-## How the lexicon API works
+## How The Lexicon API Works
 The Random Lexicon API fetches the words and definitions from Wiktionary through Kaikki.org. 
 To generate random word one can make an API endpoint that will be able to read JSON response. 
 Skim through their quick start guide at: [randomlexicon.com](https://randomlexicon.com/api-quick-start)
 
-## Why we use API keys
+## Why We Use API Keys
 By using API keys we can create a container on our user server that fetches the information from the API server database in a secure way. API keys can help the API server to monitor the usage and control the main database. 
 
 
