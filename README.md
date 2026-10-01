@@ -1,4 +1,4 @@
-# weather-app
+
 
 # Tutorial
 
@@ -30,7 +30,8 @@ Today we will build a weather + lexicon application page with APIs, using GitHub
 4. On the page scroll below and fetch the API URL that will run the requests we ticked mark. 
 
 ## How to get random words for the site 
-1. Visit [randomlexico.com](https://randomlexicon.com/api-quick-start)
+1. Visit [randomlexicon.com](https://randomlexicon.com/api-quick-start)
+titled as API quick start guide. 
 2. Add the code to your page. Commit changes. 
 
 
