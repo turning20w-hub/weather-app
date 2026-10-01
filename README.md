@@ -5,41 +5,39 @@
 ## Build your first weather + lexicon application
 Today we will build a weather + lexicon application page with APIs, using GitHub Pages, 
 
-Create a new repository and let's name it “WeatherLexi” 
-Toggle ReadMe file as on. 
-Visit OpenMateo to source the exact co-ordinates according to your location and visit Random lexicon to source their API. 
-Create a new file and name it index.html and add the code. Commit changes. 
-Create a new file and name it script.js. Add the code with javascript that will connect with the targeted APIs that lists in code. Commit changes. 
-Create a new file and name it style.css..Add the code and commit changes
-
-
+1. Create a new repository and let's name it “WeatherLexi” 
+2. Toggle ReadMe file as on. 
+3. Visit OpenMateo to source the exact co-ordinates according to your location and visit Random lexicon to source their API. 
+4. Create a new file and name it `index.html` and add the code. Commit changes. 
+5. Create a new file and name it `script.js`. Add the code with javascript that will connect with the targeted APIs that lists in code. Commit changes. 
+6. Create a new file and name it `style.css`.Add the code and commit changes
 
 
 # How-to
 
 ## How to authenticate API requests 
-Visit open-meteo.com and add the coordinates and information to get the API. 
-Add the API URL in your script.js file. For eg.: `https://open-meteo.com/en/docs?latitude=19.8776&longitude=75.3423&daily=sunrise,sunset&timezone=auto`
-Commit changes
-The live web page will run the APIs and fetch information. 
+1. Visit open-meteo.com and add the coordinates and information to get the API. 
+2. Add the API URL in your script.js file. For eg.: `https://open-meteo.com/en/docs?latitude=19.8776&longitude=75.3423&daily=sunrise,sunset&timezone=auto`
+3. Commit changes
+4. The live web page will run the APIs and fetch information. 
 [ Same applies to Random Lexicon API] 
 
 
 ## How to retrieve weather for a location
-Visit open-meteo.com and add the coordinates
-You can tick the box to fetch the weather data every two hours.
-Temperature, rain, precipitation are also some options available to use. 
-On the page scroll below and fetch the API URL that will run the requests we ticked mark. 
+1. Visit open-meteo.com and add the coordinates
+2. You can tick the box to fetch the weather data every two hours.
+3. Temperature, rain, precipitation are also some options available to use. 
+4. On the page scroll below and fetch the API URL that will run the requests we ticked mark. 
 
 ## How to get random words for the site 
-Visit https://randomlexicon.com/api-quick-start
-Add the code to your page. Commit changes. 
+1. Visit [randomlexico.com](https://randomlexicon.com/api-quick-start)
+2. Add the code to your page. Commit changes. 
 
 
 ## How to handle API errors
-APIs server will communicate via JSON. Ensure you have JavaScript enabled and Js. code in your file. 
-Ensure you have index.html and style.css file targeting the page structure to yield results through API. 
-() fetch - Ensure the element is used. 
+1. APIs server will communicate via JSON. Ensure you have JavaScript enabled and Js. code in your file. 
+2. Ensure you have `index.html` and `style.css` file targeting the page structure to yield results through API. 
+3. () fetch - Ensure the element is used. 
 
 # Reference
 
@@ -57,8 +55,7 @@ With Open Mateo you can use their API for non commercial use for upto 10.000 dai
 ## How the lexicon API works
 The Random Lexicon API fetches the words and definitions from Wiktionary through Kaikki.org. 
 To generate random word one can make an API endpoint that will be able to read JSON response. 
-Skim through their quick start guide at: 
-https://randomlexicon.com/api-quick-start
+Skim through their quick start guide at: [randomlexicon.com](https://randomlexicon.com/api-quick-start)
 
 ## Why we use API keys
 By using API keys we can create a container on our user server that fetches the information from the API server database in a secure way. API keys can help the API server to monitor the usage and control the main database. 
